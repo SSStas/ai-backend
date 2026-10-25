@@ -1,0 +1,20 @@
+[project]
+name = "ai-backend"
+version = "0.1.0"
+description = "Remote AI/GPU backend"
+requires-python = ">=3.11,<3.14"
+
+dependencies = [
+    "fastapi",
+    "pydantic-settings",
+    "python-multipart",
+    "uvicorn[standard]",
+    "httpx",
+    "whisperx",
+    "numpy>=2.4.6",
+]
+
+[dependency-groups]
+local = [
+    "torch",
+]
